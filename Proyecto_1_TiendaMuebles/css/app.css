@@ -45,3 +45,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.listado-categorias {
+    display: grid;
+}
