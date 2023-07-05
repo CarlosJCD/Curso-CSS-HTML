@@ -8,19 +8,24 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    font-size: 5rem;
-}
-
-h1 span {
-    color: #037bc0;
-}
-
-.navegacion {}
-
-.enlace {
-    text-transform: uppercase;
-    font-weight: bold;
+/* * Globales */
+a {
     text-decoration: none;
+    color: #000;
+}
+
+
+/* * Header y Navegacion */
+
+.nombre-sitio {
+    text-align: center;
+}
+
+.nombre-sitio span {
     color: #037bc0;
+}
+
+.nav-principal {
+    border-top: 1px solid #e1e1e1;
+    padding: 20px 0;
 }
