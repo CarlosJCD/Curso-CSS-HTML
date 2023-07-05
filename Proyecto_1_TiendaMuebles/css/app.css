@@ -41,11 +41,13 @@ a {
 
 .hero {
     background-image: url(../img/principal.jpg);
-    height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 550px;
 }
 
 .listado-categorias {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
