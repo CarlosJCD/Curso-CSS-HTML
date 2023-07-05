@@ -1,7 +1,7 @@
 h1 {
-    font-size: 100px;
+    font-size: 5rem;
 }
 
-h2 {
-    text-align: center;
+h1 span {
+    color: #037bc0;
 }
