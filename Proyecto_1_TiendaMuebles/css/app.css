@@ -320,3 +320,20 @@ img {
 }
 
 /* * FIN Pagina "Blog" */
+
+/* * Pagina "Galería" */
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
