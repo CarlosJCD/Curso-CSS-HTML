@@ -98,6 +98,18 @@
             <label for="proveedor">Proveedor</label>
             <input type="radio" id="proveedor" name="tipo" />
           </div>
+
+          <div class="campo">
+            <label for="categoria">categoría de Interés</label>
+            <input list="categorias" name="categorias" />
+            <datalist id="categorias">
+              <option value="Cocina"></option>
+              <option value="Exterior"></option>
+              <option value="Recamaras"></option>
+              <option value="Oficina"></option>
+              <option value="Television"></option>
+            </datalist>
+          </div>
         </fieldset>
       </form>
     </main>
