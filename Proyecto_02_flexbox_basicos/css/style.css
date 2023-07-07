@@ -202,3 +202,14 @@ h2 {
 .d-flex-12 .box:nth-child(3) {
     flex-shrink: 3;
 }
+
+/* * 13.- Flex Shorthand */
+
+.d-flex-13 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex-13 .box {
+    flex: 0 0 calc(33.3% - 1rem);
+}
