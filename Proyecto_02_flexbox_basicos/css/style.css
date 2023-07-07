@@ -107,3 +107,12 @@ h2 {
 
     justify-content: center;
 }
+
+/* * 5.- Align Items (Dirección Row) */
+
+.d-flex-5 {
+    display: flex;
+    height: 700px;
+
+    align-items: baseline;
+}
