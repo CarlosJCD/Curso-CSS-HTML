@@ -248,11 +248,10 @@ img {
 .grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .columna-footer h3 {
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .columna-footer nav a {
@@ -261,5 +260,5 @@ img {
 
 .copyright-footer {
     text-align: center;
-
+    margin-top: 5rem;
 }
