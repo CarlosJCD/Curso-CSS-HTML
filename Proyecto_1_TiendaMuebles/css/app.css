@@ -314,5 +314,9 @@ img {
     color: #037bc0;
 }
 
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
 
 /* * FIN Pagina "Blog" */
