@@ -15,6 +15,26 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
 }
 
 a {
@@ -22,28 +42,21 @@ a {
     color: #000;
 }
 
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Playfair Display', serif;
-}
-
 img {
     width: 100%;
     display: block;
 }
 
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
 /* * Header y Navegación */
 
 .nombre-sitio {
     text-align: center;
-    margin: 5rem 0;
+    margin: 5rem 0 0 0;
     font-size: 4rem;
 }
 
@@ -65,10 +78,15 @@ img {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 55rem;
 }
 
 /* * Categorías  */
+
+.categorias {
+    padding-top: 5rem;
+}
 
 .categorias h2 {
     text-align: center;
