@@ -262,3 +262,19 @@ img {
     text-align: center;
     margin-top: 5rem;
 }
+
+/* * FIN Footer */
+
+/* * Pagina "Sobre Nosotros" */
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
