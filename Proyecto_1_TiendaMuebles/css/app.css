@@ -9,6 +9,12 @@ html {
 }
 
 /* * Globales */
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -17,6 +23,12 @@ a {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
 }
 
 img {
