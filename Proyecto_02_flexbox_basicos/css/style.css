@@ -148,3 +148,14 @@ h2 {
 .d-flex-8 .box {
     flex-basis: 20rem;
 }
+
+/* * 9.- Gap y Calc */
+
+.d-flex-9 {
+    display: flex;
+    gap: 2rem;
+}
+
+.d-flex-9 .box {
+    flex-basis: 33.3%;
+}
