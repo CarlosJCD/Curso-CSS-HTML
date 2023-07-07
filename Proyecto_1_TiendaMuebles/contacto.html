@@ -70,23 +70,34 @@
 
         <fieldset>
           <legend>País</legend>
-          <label for="pais">País:</label>
-          <select id="pais">
-            <option disabled selected>- Selecciona un país -</option>
-            <option>México</option>
-            <option>Perú</option>
-            <option>Colombia</option>
-            <option>Argentina</option>
-            <option>Chile</option>
-            <option>Cuba</option>
-            <option>El Salvador</option>
-            <option>Brasil</option>
-            <option>Puerto Rico</option>
-          </select>
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais">
+              <option disabled selected>- Selecciona un país -</option>
+              <option>México</option>
+              <option>Perú</option>
+              <option>Colombia</option>
+              <option>Argentina</option>
+              <option>Chile</option>
+              <option>Cuba</option>
+              <option>El Salvador</option>
+              <option>Brasil</option>
+              <option>Puerto Rico</option>
+            </select>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Información Extra</legend>
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input type="radio" id="cliente" name="tipo" />
+          </div>
+
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input type="radio" id="proveedor" name="tipo" />
+          </div>
         </fieldset>
       </form>
     </main>
