@@ -112,3 +112,15 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+
+/* * Bloque "Sobre Nosotros" */
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    background-position: left center;
+    margin-top: 2rem;
+
+}
