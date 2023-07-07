@@ -126,3 +126,15 @@ h2 {
 
     align-items: center;
 }
+
+/* * 7.- Align Items y JustifyContent */
+
+.d-flex-7 {
+    display: flex;
+    height: 80rem;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
