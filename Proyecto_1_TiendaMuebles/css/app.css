@@ -192,6 +192,13 @@ img {
     grid-column: 1 / 4;
 }
 
+.producto:nth-child(2) img,
+.producto:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 .producto:nth-child(3) {
     grid-column: 4 / 7;
 }
@@ -225,4 +232,21 @@ img {
 .texto-producto .precio {
     font-size: 2.8rem;
     font-weight: 900;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+.columna-footer nav a {
+    display: block;
+}
+
+.copyright-footer {
+    text-align: center;
+
 }
