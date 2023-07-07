@@ -60,10 +60,12 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
 }
 
 .btn:hover {
     background-color: #769c02;
+    cursor: pointer;
 }
 
 /* * FIN Globales */
@@ -371,4 +373,12 @@ img {
 .campo label {
     flex-basis: 10rem;
 
+}
+
+.campo input:not([type='radio']),
+.campo select,
+textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
 }
