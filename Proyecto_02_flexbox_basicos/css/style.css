@@ -138,3 +138,13 @@ h2 {
     align-items: center;
 
 }
+
+/* * 8.- Flex Basis */
+
+.d-flex-8 {
+    display: flex;
+}
+
+.d-flex-8 .box {
+    flex-basis: 20rem;
+}
