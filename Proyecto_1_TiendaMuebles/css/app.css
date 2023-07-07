@@ -19,7 +19,13 @@ a {
     margin: 0 auto;
 }
 
-/* * Header y Navegacion */
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* * Header y Navegación */
 
 .nombre-sitio {
     text-align: center;
@@ -44,6 +50,27 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+}
+
+/* * Categorías  */
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+    &:hover {
+        background-color: #037bc0;
+        color: white;
+        cursor: pointer;
+        border-bottom-right-radius: 10px;
+    }
+
 }
 
 .listado-categorias {
