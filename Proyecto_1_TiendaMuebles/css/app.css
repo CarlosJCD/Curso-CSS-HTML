@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -13,6 +14,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
 }
 
 a {
@@ -21,7 +23,7 @@ a {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -41,6 +43,8 @@ img {
 
 .nombre-sitio {
     text-align: center;
+    margin: 5rem 0;
+    font-size: 4rem;
 }
 
 .nombre-sitio span {
@@ -52,7 +56,7 @@ img {
 }
 
 .nav-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -61,7 +65,7 @@ img {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 55rem;
 }
 
 /* * Categorías  */
@@ -73,14 +77,14 @@ img {
 .categoria a {
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 
     &:hover {
         background-color: #037bc0;
         color: white;
         cursor: pointer;
-        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 1rem;
     }
 
 }
@@ -88,5 +92,5 @@ img {
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
