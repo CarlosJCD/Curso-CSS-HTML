@@ -95,6 +95,17 @@ h2 {
 
 /* * 4.- Span */
 
+.grid-4 {
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(3, 300px);
+}
+
+.grid-4 .box:nth-child(2) {
+    background-color: cornflowerblue;
+    grid-column: 1 / span 2;
+}
+
 /* * 5.- Grid Shorthand */
 
 /* * 6.- Grid Autoflow */
