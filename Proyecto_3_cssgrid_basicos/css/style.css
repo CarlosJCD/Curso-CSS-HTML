@@ -136,6 +136,13 @@ h2 {
 
 /* * 8.- Grid Gap */
 
+.grid-8 {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
 /* * 9.- Grid Areas */
 
 /* * 10.- Grid Template */
