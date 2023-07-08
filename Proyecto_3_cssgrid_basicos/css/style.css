@@ -115,6 +115,21 @@ h2 {
 
 /* * 6.- Grid Autoflow */
 
+.grid-6 {
+    display: grid;
+    grid: repeat(2, 300px) / repeat(3, 300px);
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+
+.grid-6 .box:nth-child(2) {
+    grid-column: 1 / 2;
+}
+
+
+
+
+
 /* * 7.- Grid Fr y Grid Repeat */
 
 /* * 8.- Grid Gap */
