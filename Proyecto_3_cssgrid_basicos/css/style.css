@@ -108,6 +108,11 @@ h2 {
 
 /* * 5.- Grid Shorthand */
 
+.grid-5 {
+    display: grid;
+    grid: repeat(2, 300px) / repeat(3, 300px);
+}
+
 /* * 6.- Grid Autoflow */
 
 /* * 7.- Grid Fr y Grid Repeat */
