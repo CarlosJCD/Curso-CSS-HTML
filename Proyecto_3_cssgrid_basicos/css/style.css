@@ -126,11 +126,13 @@ h2 {
     grid-column: 1 / 2;
 }
 
-
-
-
-
 /* * 7.- Grid Fr y Grid Repeat */
+
+.grid-7 {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 2rem;
+}
 
 /* * 8.- Grid Gap */
 
