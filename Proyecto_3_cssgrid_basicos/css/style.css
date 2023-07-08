@@ -232,3 +232,14 @@ h2 {
 }
 
 /* * 12.- Grid Autofill y Autofit */
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fit, 200px);
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 2rem;
+
+}
