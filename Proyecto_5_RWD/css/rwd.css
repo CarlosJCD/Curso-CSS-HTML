@@ -148,7 +148,7 @@ Tamaño Monitor XL
 ==========================================
 */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .tres-columnas-flex {
         display: flex;
         gap: 2rem;
@@ -156,5 +156,19 @@ Tamaño Monitor XL
 
     .columna {
         flex-grow: 1;
+    }
+} */
+
+/*
+==========================================
+* 9.- 3 Columnas Responsive Grid
+==========================================
+*/
+
+@media (min-width: 768px) {
+    .tres-columnas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
