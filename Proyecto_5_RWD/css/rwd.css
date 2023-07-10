@@ -127,3 +127,17 @@ Tamaño Monitor
 
 Tamaño Monitor XL 
 @media (min-width: 1600px) {} */
+
+/*
+==========================================
+* 7.- Crear contenedores responsive
+==========================================
+*/
+
+.contenedor-responsive {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    height: 20rem;
+    margin: 0 auto;
+}
