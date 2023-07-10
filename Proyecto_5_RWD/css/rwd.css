@@ -1,6 +1,6 @@
-/* Introduccion a Responsive Web Design */
+/* * 1.- Introduccion a Responsive Web Design */
 
-.oferta {
+/* .oferta {
     background-color: #00446e;
     padding: 2rem;
     text-align: center;
@@ -20,5 +20,29 @@
 
     .precio {
         font-size: 2rem;
+    }
+} */
+
+/* * 2.- Mobile first */
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio {
+    font-size: 4rem;
+}
+
+@media (min-width: 600px) {
+    .oferta {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .oferta {
+        max-width: 60rem;
     }
 }
