@@ -91,6 +91,44 @@
       </picture>
 
       <h2>Formatos Modernos con SRC SET</h2>
+      <picture>
+        <source
+          sizes="1920w, 1280w, 640w"
+          srcset="
+            img/imagen.avif      1920w,
+            img/imagen-1280.avif 1280w,
+            img/imagen-640.avif   640w
+          "
+          type="image/avif"
+        />
+        <source
+          sizes="1920w, 1280w, 640w"
+          srcset="
+            img/imagen.webp      1920w,
+            img/imagen-1280.webp 1280w,
+            img/imagen-640.webp   640w
+          "
+          type="image/webp"
+        />
+        <source
+          sizes="1920w, 1280w, 640w"
+          srcset="
+            img/imagen.jpg      1920w,
+            img/imagen-1280.jpg 1280w,
+            img/imagen-640.jpg   640w
+          "
+          type="image/jpeg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="img/imagen.jpg"
+          lazyalt="imagen"
+          width="500"
+          height="300"
+          alt=" Imagen "
+        />
+      </picture>
     </div>
   </body>
 </html>
