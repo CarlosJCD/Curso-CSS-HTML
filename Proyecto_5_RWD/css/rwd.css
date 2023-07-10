@@ -178,6 +178,18 @@ Tamaño Monitor XL
 * 9.- Imágenes responsive
 ==========================================
 */
+
+/* img {
+    max-width: 100%;
+    display: block;
+} */
+
+/*
+==============================================================
+* 10.- Imágenes en Avif y WebP Para mayor performance
+==============================================================
+*/
+
 img {
     max-width: 100%;
     display: block;
