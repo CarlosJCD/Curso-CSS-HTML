@@ -1,4 +1,8 @@
-/* * 1.- Introduccion a Responsive Web Design */
+/* 
+========================================
+* 1.- Introduccion a Responsive Web Design 
+========================================
+*/
 
 /* .oferta {
     background-color: #00446e;
@@ -23,7 +27,12 @@
     }
 } */
 
-/* * 2.- Mobile first */
+/* 
+========================================
+* 2.- Mobile first 
+========================================
+*/
+
 /* .oferta {
     background-color: #00446e;
     padding: 2rem;
@@ -47,7 +56,11 @@
     }
 } */
 
-/* * 3.- Desktop first */
+/* 
+========================================
+* 3.- Desktop first 
+========================================
+*/
 
 /* .oferta {
     background-color: #00446e;
@@ -69,9 +82,13 @@
     }
 } */
 
-/* * 4.- Media Queries entre 2 tamaños */
+/* 
+========================================
+* 4.- Media Queries entre 2 tamaños 
+========================================
+*/
 
-.oferta {
+/* .oferta {
     background-color: #00446e;
     padding: 2rem;
     text-align: center;
@@ -88,4 +105,25 @@
     .oferta {
         background-color: yellow;
     }
-}
+} */
+
+/*
+==========================================
+* 6.- Tamaños estándar para media queries
+==========================================
+*/
+
+/* Tamaño Teléfono 
+@media (min-width: 550px) {}
+
+Tamaño Tableta 
+@media (min-width: 768px) {}
+
+Tamaño Laptop 
+@media (min-width: 1024px) {}
+
+Tamaño Monitor 
+@media (min-width: 1200px) {}
+
+Tamaño Monitor XL 
+@media (min-width: 1600px) {} */
