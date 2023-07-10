@@ -24,7 +24,7 @@
 } */
 
 /* * 2.- Mobile first */
-.oferta {
+/* .oferta {
     background-color: #00446e;
     padding: 2rem;
     text-align: center;
@@ -42,6 +42,28 @@
 }
 
 @media (min-width: 800px) {
+    .oferta {
+        max-width: 60rem;
+    }
+} */
+
+/* * 3.- Desktop first */
+
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .oferta {
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 800px) {
     .oferta {
         max-width: 60rem;
     }
