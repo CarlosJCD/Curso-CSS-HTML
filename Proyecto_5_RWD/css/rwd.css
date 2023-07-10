@@ -49,7 +49,7 @@
 
 /* * 3.- Desktop first */
 
-.oferta {
+/* .oferta {
     background-color: #00446e;
     padding: 2rem;
     text-align: center;
@@ -66,5 +66,26 @@
 @media (max-width: 800px) {
     .oferta {
         max-width: 60rem;
+    }
+} */
+
+/* * 4.- Media Queries entre 2 tamaños */
+
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .oferta {
+        background-color: yellow;
     }
 }
