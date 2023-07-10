@@ -165,10 +165,20 @@ Tamaño Monitor XL
 ==========================================
 */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .tres-columnas-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+} */
+
+/*
+==========================================
+* 9.- Imágenes responsive
+==========================================
+*/
+img {
+    max-width: 100%;
+    display: block;
 }
