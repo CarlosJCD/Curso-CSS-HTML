@@ -75,6 +75,13 @@ img {
     transition: background-color .3s ease-out;
     text-align: center;
     border: none;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+    }
 }
 
 .btn:hover {
@@ -463,8 +470,14 @@ img {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .galeria img {
@@ -472,6 +485,7 @@ img {
     height: 40rem;
     object-fit: cover;
 }
+
 
 /* * FIN Pagina "Galería" */
 
