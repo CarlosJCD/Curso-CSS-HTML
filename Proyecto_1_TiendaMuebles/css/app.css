@@ -114,7 +114,8 @@ img {
 .nav-principal {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .hero {
@@ -122,7 +123,18 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 55rem;
+    height: 25rem;
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        height: 55rem;
+    }
 }
 
 /* * FIN Header y Navegación */
