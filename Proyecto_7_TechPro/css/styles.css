@@ -1,6 +1,16 @@
 :root {
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --gris: #3B3B3B;
+    --blanco: #fff;
+    --negro: #1F1E1E;
+    --grisClaro: #e1e1e1;
+
+    --separacion: 5rem;
+
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundario: 'Lato', sans-serif;
+
 }
 
 body {
