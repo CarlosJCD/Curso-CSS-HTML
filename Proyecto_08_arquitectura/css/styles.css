@@ -218,3 +218,37 @@ img {
 }
 
 /* * FIN Header*/
+
+/* * Sobre Nosotros */
+
+.sobre-nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.contenido-sobre-nosotros {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-sobre-nosotros {
+        grid-column: 2 / 4;
+    }
+}
+
+.contenido-sobre-nosotros h2,
+.contenido-sobre-nosotros p {
+    margin-bottom: 1rem;
+}
+
+/* * FIN Sobre Nosotros */
