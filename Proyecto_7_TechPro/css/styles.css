@@ -269,6 +269,15 @@ img {
     flex-direction: column-reverse;
 }
 
+@media (min-width: 768px) {
+    .listado-modelos {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 20rem);
+    }
+}
+
 .modelo {
     background-color: var(--grisClaro);
     margin-bottom: 2rem;
@@ -276,6 +285,7 @@ img {
     color: var(--primario);
     border-radius: 2rem;
     min-height: 20rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,6 +293,10 @@ img {
     background-repeat: no-repeat;
     background-position: 95% center;
     background-size: 15rem;
+}
+
+.modelo {
+    margin-bottom: 0;
 }
 
 .modelo h3 {
@@ -307,10 +321,30 @@ img {
     background-image: url(../img/modelo-y.svg);
 }
 
+@media (min-width: 768px) {
+    .modelo-y {
+        grid-row: 2 /3;
+        grid-column: 1 / 2;
+    }
+}
+
 .modelo-z {
     background-color: var(--primario);
     color: var(--blanco);
     background-image: url(../img/modelo-z.svg);
+}
+
+@media (min-width: 768px) {
+    .modelo-z {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        background-size: 30rem;
+    }
+
+    .modelo-z h3 {
+        font-size: 3.4rem;
+    }
+
 }
 
 .modelo-z .precio {
