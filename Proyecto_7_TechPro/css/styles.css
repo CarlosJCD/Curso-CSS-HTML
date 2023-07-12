@@ -42,6 +42,7 @@ h3 {
     font-weight: 900;
     font-family: var(--fuenteSecundario);
     margin: calc(var(--separacion) / 2);
+    margin: 0;
 }
 
 h1 {
@@ -77,7 +78,7 @@ img {
 
 .header {
     background-color: var(--negro);
-    padding: calc(var(--separacion) * 3);
+    padding: calc(var(--separacion) * 3) 0;
     color: var(--blanco);
 }
 
@@ -86,6 +87,47 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.texto-header {
+    text-align: center;
+    padding-top: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .texto-header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.texto-header p {
+    margin: 0;
+}
+
+.tagline-producto {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.nombre-producto {
+    font-size: 6rem;
+}
+
+@media (min-width: 768px) {
+    .nombre-producto {
+        font-size: 10rem;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.precio-producto span {
+    font-size: 6rem;
+    font-weight: 900;
 }
 
 
