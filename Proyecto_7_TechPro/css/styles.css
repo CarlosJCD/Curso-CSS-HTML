@@ -432,3 +432,17 @@ img {
 }
 
 /* * FIN Newsletter */
+
+/* * Footer */
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuenteSecundario);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--primario);
+    padding: 2rem 0;
+    font-weight: 900;
+}
+
+/* * FIN Footer */
