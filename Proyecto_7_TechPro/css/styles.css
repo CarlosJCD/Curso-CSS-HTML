@@ -191,18 +191,40 @@ img {
 
 /* * Acerca De */
 
-.acercaDe {
+.acerca-de {
     background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
     background-position: right;
     background-size: 100%, 110rem;
     background-repeat: repeat, no-repeat;
 }
 
+@media (min-width: 768px) {
+    .acerca-de {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    }
+}
+
+@media (min-width: 1600px) {
+    .acerca-de {
+        background-size: 100%, 210rem;
+    }
+}
+
+
 .acerca-de-grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     row-gap: var(--separacion);
+}
 
+@media (min-width: 768px) {
+    .acerca-de-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: unset;
+        grid-template-rows: unset;
+        column-gap: 4rem;
+        padding: calc(var(--separacion) * 2) 0;
+    }
 }
 
 .texto-acerca-de {
@@ -211,6 +233,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .texto-acerca-de {
+        padding-bottom: 0;
+    }
 }
 
 .texto-acerca-de h2 {
