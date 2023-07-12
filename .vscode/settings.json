@@ -1,9 +1,0 @@
-{
-    "html-to-css-autocompletion.getSelectorsFromFileTypes": [
-        "html"
-    ],
-    "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
-    "html-to-css-autocompletion.folderNamesToBeIncluded": [
-        "Proyecto_08_arquitectura"
-    ]
-}
