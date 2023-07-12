@@ -5,9 +5,7 @@
     --blanco: #fff;
     --negro: #1F1E1E;
     --grisClaro: #e1e1e1;
-
     --separacion: 5rem;
-
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundario: 'Lato', sans-serif;
 }
@@ -61,6 +59,7 @@ h3 {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* * FIN Globales */
@@ -70,3 +69,24 @@ img {
 .text-center {
     text-align: center;
 }
+
+/* * FIN Utilidades */
+
+
+/* * Header */
+
+.header {
+    background-color: var(--negro);
+    padding: calc(var(--separacion) * 3);
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* * FIN Header */
