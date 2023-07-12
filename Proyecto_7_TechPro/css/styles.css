@@ -297,10 +297,13 @@ img {
     transition: transform 200ms, background-size 200ms;
 }
 
-.modelo:hover {
-    transform: scale(1.1);
-    background-size: 35rem;
+@media (min-width: 768px) {
+    .modelo:hover {
+        transform: scale(1.1);
+        background-size: 35rem;
+    }
 }
+
 
 @media (min-width: 768px) {
     .modelo {
@@ -360,5 +363,72 @@ img {
     font-size: 6rem;
 }
 
-
 /* * FIN Modelos */
+
+/* * Newsletter */
+
+.newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(../img//newsletter.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%, 70rem;
+}
+
+@media (min-width: 768px) {
+    .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(../img//newsletter.jpg);
+        background-position: center, -21rem 0rem;
+        background-size: 100%, 100rem;
+        padding: 10rem 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .newsletter {
+        background-size: 100%, 1000rem;
+        background-position: center, 0% -30rem;
+    }
+}
+
+.contenido-newsletter {
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    gap: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .contenido-newsletter {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.texto-newsletter {
+    grid-row: 2 / 3;
+}
+
+@media (min-width: 768px) {
+    .texto-newsletter {
+        grid-row: unset;
+        grid-column: 2 / 3;
+    }
+}
+
+
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--primario);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--blanco);
+    border: none;
+}
+
+/* * FIN Newsletter */
