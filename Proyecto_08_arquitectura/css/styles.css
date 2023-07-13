@@ -154,8 +154,9 @@ img {
 }
 
 
-.header a {
+.barra a {
     color: var(--blanco);
+    font-size: 2rem;
 }
 
 .navegacion {
@@ -384,5 +385,29 @@ img {
     }
 }
 
-
 /* * FIN Galería */
+
+/* * Footer */
+
+.footer {
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--blanco);
+}
+
+.copyright {
+    background-color: var(--negro);
+    text-align: center;
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* * FIN Footer */
