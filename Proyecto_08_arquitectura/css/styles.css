@@ -226,7 +226,7 @@ img {
     grid-template-rows: repeat(2, 1fr);
     background-image: url(../img/nosotros.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom;
 }
 
 @media (min-width: 768px) {
@@ -252,3 +252,31 @@ img {
 }
 
 /* * FIN Sobre Nosotros */
+
+/* * Modelos */
+
+.modelo {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.contenido-modelo {
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico {
+    background-image: url(../img/modelo_basico.jpg);
+}
+
+.premiere {
+    background-image: url(../img/modelo_premier.jpg);
+}
+
+.elite {
+    background-image: url(../img/modelo_elite.jpg);
+}
+
+/* * FIN Modelos */
