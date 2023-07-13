@@ -262,6 +262,13 @@ img {
     background-position: bottom;
 }
 
+@media (min-width: 768px) {
+    .modelo {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
 .contenido-modelo {
     padding: 5rem;
     background-color: var(--blanco);
@@ -271,8 +278,30 @@ img {
     background-image: url(../img/modelo_basico.jpg);
 }
 
+@media (min-width: 768px) {
+    .basico .contenido-modelo {
+        grid-row: 2 /3;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .basico {
+        background-position: top right;
+    }
+}
+
 .premiere {
     background-image: url(../img/modelo_premier.jpg);
+}
+
+@media (min-width: 768px) {
+    .premiere .contenido-modelo {
+        grid-column: 2 /3;
+    }
+
+
+    .premiere {
+        background-position: top left;
+    }
 }
 
 .elite {
