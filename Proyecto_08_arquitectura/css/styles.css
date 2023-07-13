@@ -260,7 +260,13 @@ img {
     grid-template-rows: repeat(2, 1fr);
     background-repeat: no-repeat;
     background-position: bottom;
+    margin-bottom: 5rem;
 }
+
+.modelo:last-of-type {
+    margin-bottom: 0;
+}
+
 
 @media (min-width: 768px) {
     .modelo {
@@ -296,6 +302,7 @@ img {
 @media (min-width: 768px) {
     .premiere .contenido-modelo {
         grid-column: 2 /3;
+        padding: 2rem;
     }
 
 
@@ -306,6 +313,16 @@ img {
 
 .elite {
     background-image: url(../img/modelo_elite.jpg);
+}
+
+@media (min-width: 768px) {
+    .elite {
+        background-position: top right;
+    }
+
+    .elite .contenido-modelo {
+        padding: 2rem 2rem 2rem 0;
+    }
 }
 
 /* * FIN Modelos */
