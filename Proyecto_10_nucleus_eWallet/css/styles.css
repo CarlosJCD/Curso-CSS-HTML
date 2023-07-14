@@ -78,10 +78,6 @@ img {
     margin: 0 auto 3rem auto;
 }
 
-.header__grid {}
-
-.header__texto {}
-
 .header__heading {
     text-align: center;
     font-size: 3rem;
@@ -96,10 +92,6 @@ img {
     text-align: center;
     color: var(--blanco);
 }
-
-.header__grafico {}
-
-.header__imagen {}
 
 .navegacion {
     display: flex;
@@ -173,3 +165,9 @@ img {
 }
 
 /* * FIN HEADER */
+
+/* * SECCIÓN ¿QUE ES? */
+
+
+
+/* * FIN SECCIÓN ¿QUE ES? */
