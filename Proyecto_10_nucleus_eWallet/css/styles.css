@@ -82,7 +82,10 @@ img {
 
 .header__texto {}
 
-.header__heading {}
+.header__heading {
+    text-align: center;
+    font-size: 3rem;
+}
 
 .header__boton {}
 
@@ -114,6 +117,24 @@ img {
         margin: 0;
     }
 
+    .header__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .header__heading {
+        text-align: left;
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+
+    .header__imagen {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
     .navegacion {
         flex-direction: row;
         align-items: flex-start;
@@ -137,9 +158,5 @@ img {
         background-size: 110rem;
     }
 }
-
-
-
-
 
 /* * FIN HEADER */
