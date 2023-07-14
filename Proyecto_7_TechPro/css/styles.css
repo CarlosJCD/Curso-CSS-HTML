@@ -115,17 +115,17 @@ img {
     }
 }
 
+.tagline-producto {
+    font-size: clamp(1rem, -0.8rem + 10vw, 3rem);
+    font-weight: 900;
+}
+
 .texto-header p {
     margin: 0;
 }
 
-.tagline-producto {
-    font-size: 3rem;
-    font-weight: 900;
-}
-
 .nombre-producto {
-    font-size: 6rem;
+    font-size: clamp(3rem, -0.8rem + 10vw, 6rem);
 }
 
 @media (min-width: 768px) {
@@ -139,6 +139,10 @@ img {
 .precio-producto span {
     font-size: 6rem;
     font-weight: 900;
+}
+
+.descripcion-producto {
+    font-size: clamp(.8rem, -0.8rem + 10vw, 1.6rem);
 }
 
 /* * FIN Header */
@@ -460,6 +464,7 @@ img {
 
 .texto-newsletter {
     grid-row: 2 / 3;
+    font-size: clamp(0.5rem, -0.8rem + 10vw, 1.6rem);
 }
 
 @media (min-width: 768px) {
@@ -483,12 +488,24 @@ img {
     font-weight: 900;
     font-size: 2rem;
     color: var(--blanco);
+    margin-bottom: 2rem;
     border: none;
+    position: sticky;
 }
 
 /* * FIN Newsletter */
 
 /* * Footer */
+
+.footer {
+    background-color: var(--grisClaro);
+}
+
+@media (max-width: 442px) {
+    .footer {
+        margin-top: 10rem;
+    }
+}
 
 .footer p {
     text-align: center;
