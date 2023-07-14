@@ -116,7 +116,7 @@ img {
 }
 
 .tagline-producto {
-    font-size: clamp(1rem, -0.8rem + 10vw, 3rem);
+    font-size: clamp(1rem, -0.8rem + 10vw, 2rem);
     font-weight: 900;
 }
 
@@ -125,7 +125,7 @@ img {
 }
 
 .nombre-producto {
-    font-size: clamp(3rem, -0.8rem + 10vw, 6rem);
+    font-size: clamp(4rem, -0.8rem + 10vw, 6rem);
 }
 
 @media (min-width: 768px) {
@@ -290,12 +290,13 @@ img {
 
 /* * Modelos */
 
+
 .modelos {
     padding: var(--separacion) 0;
 }
 
 .header-modelos {
-    font-size: 6rem;
+    font-size: clamp(4rem, -0.8rem + 10vw, 6rem);
     margin-bottom: var(--separacion);
 }
 
@@ -332,6 +333,14 @@ img {
     transition: transform 200ms, background-size 200ms;
 }
 
+@media (max-width: 370px) {
+    .modelo {
+        padding: 0 0 20rem 0;
+        align-items: center;
+        background-position: 50% 90%;
+    }
+}
+
 @media (min-width: 768px) {
     .modelo:hover {
         transform: scale(1.1);
@@ -355,6 +364,13 @@ img {
     font-size: 4rem;
     font-weight: 900;
 }
+
+@media (max-width: 370px) {
+    .modelo p.precio {
+        margin: 0;
+    }
+}
+
 
 .modelo:first-of-type {
     margin-bottom: 0;
@@ -467,12 +483,23 @@ img {
     font-size: clamp(0.5rem, -0.8rem + 10vw, 1.6rem);
 }
 
+@media (max-width: 370px) {
+    .texto-newsletter h2 {
+        font-size: clamp(0.5rem, -0.8rem + 10vw, 3.6rem);
+    }
+
+    .texto-newsletter p {
+        font-size: clamp(0.2rem, -0.8rem + 10vw, 1.6rem);
+    }
+}
+
 @media (min-width: 768px) {
     .texto-newsletter {
         grid-row: unset;
         grid-column: 2 / 3;
     }
 }
+
 
 
 .formulario input[type="text"] {
