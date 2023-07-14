@@ -51,6 +51,7 @@ img {
     display: block;
 }
 
+[class$="__contenedor"],
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -65,12 +66,6 @@ img {
     background-position: top right;
     background-size: 10rem;
     padding: 5rem 0;
-}
-
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
 }
 
 .header__logo {
@@ -168,6 +163,29 @@ img {
 
 /* * SECCIÓN ¿QUE ES? */
 
+.nucleus {
+    margin-top: 3rem;
+}
+
+.nucleus__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+.nucleus__grid {}
+
+.nucleus__imagen {}
+
+.listado {}
+
+.listado__elemento {}
+
+.listado__heading {}
+
+.listado__texto {}
+
+@media (min-width: 768px) {}
 
 
 /* * FIN SECCIÓN ¿QUE ES? */
