@@ -1,0 +1,215 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+
+html {
+    font-size: 62.5%;
+    /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: var(--azul);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1,
+h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+
+}
+
+.caja-curso h1 {
+    margin: 0;
+}
+
+.caja-curso p {
+    font-size: 2.4rem;
+}
+
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+
+.contenedor>div {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+/* * 1.- Display Flex */
+
+.d-flex {
+    display: flex;
+}
+
+/* * 2.- Flex Direction */
+
+.d-flex-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* * 3.- Justify Content (Dirección Row) */
+
+.d-flex-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* * 4.- Justify Content (Dirección Column) */
+
+.d-flex-4 {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+
+    justify-content: center;
+}
+
+/* * 5.- Align Items (Dirección Row) */
+
+.d-flex-5 {
+    display: flex;
+    height: 700px;
+
+    align-items: baseline;
+}
+
+/* * 6.- Align Items (Dirección Column) */
+
+.d-flex-6 {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+
+    align-items: center;
+}
+
+/* * 7.- Align Items y JustifyContent */
+
+.d-flex-7 {
+    display: flex;
+    height: 80rem;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+/* * 8.- Flex Basis */
+
+.d-flex-8 {
+    display: flex;
+}
+
+.d-flex-8 .box {
+    flex-basis: 20rem;
+}
+
+/* * 9.- Gap y Calc */
+
+.d-flex-9 {
+    display: flex;
+    gap: 2rem;
+}
+
+.d-flex-9 .box {
+    flex-basis: 33.3%;
+}
+
+/* * 10.- Flex Wrap */
+
+.d-flex-10 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.d-flex-10 .box {
+    flex-basis: 33.3%;
+}
+
+/* * 11.- Flex Grow */
+
+.d-flex-11 {
+    display: flex;
+}
+
+.d-flex-11 .box:nth-child(1) {
+    flex-grow: .5;
+}
+
+.d-flex-11 .box:nth-child(2) {
+    flex-grow: 1;
+}
+
+.d-flex-11 .box:nth-child(3) {
+    flex-grow: .5;
+}
+
+/* * 12.- Flex Shrink */
+
+.d-flex-12 {
+    display: flex;
+}
+
+.d-flex-12 .box {
+    flex-basis: 33.3%;
+}
+
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 3;
+}
+
+/* * 13.- Flex Shorthand */
+
+.d-flex-13 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex-13 .box {
+    flex: 0 0 calc(33.3% - 1rem);
+}

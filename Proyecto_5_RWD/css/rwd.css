@@ -1,0 +1,196 @@
+/* 
+========================================
+* 1.- Introduccion a Responsive Web Design 
+========================================
+*/
+
+/* .oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .oferta {
+        max-width: 30rem;
+    }
+
+    .precio {
+        font-size: 2rem;
+    }
+} */
+
+/* 
+========================================
+* 2.- Mobile first 
+========================================
+*/
+
+/* .oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio {
+    font-size: 4rem;
+}
+
+@media (min-width: 600px) {
+    .oferta {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .oferta {
+        max-width: 60rem;
+    }
+} */
+
+/* 
+========================================
+* 3.- Desktop first 
+========================================
+*/
+
+/* .oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .oferta {
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .oferta {
+        max-width: 60rem;
+    }
+} */
+
+/* 
+========================================
+* 4.- Media Queries entre 2 tamaños 
+========================================
+*/
+
+/* .oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .oferta {
+        background-color: yellow;
+    }
+} */
+
+/*
+==========================================
+* 6.- Tamaños estándar para media queries
+==========================================
+*/
+
+/* Tamaño Teléfono 
+@media (min-width: 550px) {}
+
+Tamaño Tableta 
+@media (min-width: 768px) {}
+
+Tamaño Laptop 
+@media (min-width: 1024px) {}
+
+Tamaño Monitor 
+@media (min-width: 1200px) {}
+
+Tamaño Monitor XL 
+@media (min-width: 1600px) {} */
+
+/*
+==========================================
+* 7.- Crear contenedores responsive
+==========================================
+*/
+
+/* .contenedor-responsive {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    height: 20rem;
+    margin: 0 auto;
+} */
+
+/*
+==========================================
+* 8.- 3 Columnas Responsive Flexbox
+==========================================
+*/
+
+/* @media (min-width: 768px) {
+    .tres-columnas-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .columna {
+        flex-grow: 1;
+    }
+} */
+
+/*
+==========================================
+* 9.- 3 Columnas Responsive Grid
+==========================================
+*/
+
+/* @media (min-width: 768px) {
+    .tres-columnas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+} */
+
+/*
+==========================================
+* 9.- Imágenes responsive
+==========================================
+*/
+
+/* img {
+    max-width: 100%;
+    display: block;
+} */
+
+/*
+==============================================================
+* 10.- Imágenes en Avif y WebP Para mayor performance
+==============================================================
+*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
