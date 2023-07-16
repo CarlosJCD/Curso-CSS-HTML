@@ -58,7 +58,14 @@ img {
     width: 90%;
 }
 
-/* * HEADER */
+[class$="__heading"] {
+    text-align: center;
+}
+
+/* 
+================================================
+* HEADER 
+*/
 
 .header {
     background-image: url(../img/header_bg.svg);
@@ -74,7 +81,6 @@ img {
 }
 
 .header__heading {
-    text-align: center;
     font-size: 3rem;
     margin-bottom: 5rem;
 }
@@ -159,19 +165,22 @@ img {
     }
 }
 
-/* * FIN HEADER */
+/* 
+* FIN HEADER 
+================================================
+*/
 
-/* * SECCIÓN ¿QUE ES? */
+/* 
+================================================
+* SECCIÓN ¿QUE ES? */
 
 .nucleus {
     margin-top: 3rem;
 }
 
 .nucleus__heading {
-    text-align: center;
     margin-bottom: 5rem;
 }
-
 
 .nucleus__grid {
     display: flex;
@@ -179,6 +188,7 @@ img {
 }
 
 .listado__elemento {
+    background-color: var(--blanco);
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
     padding: 2rem;
     margin-bottom: 5rem;
@@ -210,4 +220,35 @@ img {
 }
 
 
-/* * FIN SECCIÓN ¿QUE ES? */
+/* 
+* FIN SECCIÓN ¿QUE ES? 
+================================================
+*/
+
+/* 
+================================================
+* SECCION SEGURIDAD 
+*/
+
+.seguridad {
+    background-color: var(--primario);
+    padding: 10rem 0;
+}
+
+.seguridad__contenedor {}
+
+.seguridad__heading {
+    color: var(--blanco);
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .seguridad__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
+.seguridad__imagen {}
