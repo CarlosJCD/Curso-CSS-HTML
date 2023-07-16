@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+
+.header {
+    padding: 5rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: rgba($color: v.$negro, $alpha: .6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .contenido-header {
+        margin-top: 5rem;
+        position: relative;
+
+    }
+}
+
+.header-inicio {
+    background-image: url(../img/header_inicio.jpg);
+}

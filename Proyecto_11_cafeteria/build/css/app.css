@@ -399,3 +399,25 @@ ul {
 .padding-bottom-0 {
   padding-bottom: 0;
 }
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+}
+.header::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.header .contenido-header {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url(../img/header_inicio.jpg);
+}
