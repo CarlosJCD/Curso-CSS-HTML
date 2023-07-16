@@ -232,8 +232,33 @@ img {
 
 .seguridad {
     background-color: var(--primario);
-    padding: 10rem 0;
+    margin: 10rem 0;
+    padding: 20rem 0;
+    overflow: hidden;
+    position: relative;
 }
+
+.seguridad::before,
+.seguridad::after {
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 120%;
+    position: absolute;
+}
+
+.seguridad::before {
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+.seguridad::after {
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
+}
+
 
 .seguridad__contenedor {}
 
@@ -252,3 +277,8 @@ img {
 }
 
 .seguridad__imagen {}
+
+/* 
+* FIN SECCION SEGURIDAD 
+================================================
+*/
