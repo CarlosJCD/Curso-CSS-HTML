@@ -199,6 +199,32 @@ img {
     transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+    .listado__elemento--2col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.listado__numero {
+    font-size: 6rem;
+    color: var(--primario);
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .listado__numero {
+        font-size: 4rem;
+        flex-basis: 20rem;
+        text-align: center;
+    }
+}
+
+
 .listado__heading {
     color: var(--primario);
     font-size: 3rem;
@@ -280,5 +306,58 @@ img {
 
 /* 
 * FIN SECCION SEGURIDAD 
+================================================
+*/
+
+/* 
+================================================
+* SECCION COMISIONES 
+*/
+
+@media (min-width: 768px) {
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 998px) {
+    .comisiones__grid {
+        align-items: center;
+    }
+}
+
+.comisiones__texto {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .comisiones__texto {
+        text-align: left;
+    }
+}
+
+
+.comisiones {}
+
+.comisiones__contenedor {}
+
+.comisiones__heading {}
+
+
+
+.comisiones__contenido {}
+
+
+
+.listado__numero {}
+
+
+/* 
+* FIN SECCION COMISIONES 
 ================================================
 */
