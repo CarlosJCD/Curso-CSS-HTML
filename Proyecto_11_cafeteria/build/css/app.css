@@ -400,6 +400,43 @@ ul {
   padding-bottom: 0;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 5rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  color: #5E311E;
+}
+h2 span {
+  color: #C39C63;
+  font-size: 1.8rem;
+  display: block;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  background-image: url(../img/cafe.svg);
+  background-size: 10rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
 .header {
   padding: 5rem 0;
   position: relative;
