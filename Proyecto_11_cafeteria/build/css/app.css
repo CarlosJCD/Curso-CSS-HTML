@@ -536,3 +536,15 @@ h3 {
     position: relative;
   }
 }
+
+.iconos {
+  margin-top: 5rem;
+}
+.iconos .listado-iconos li img {
+  margin: 0 auto;
+}
+.iconos .listado-iconos li p {
+  font-family: "Bona Nova", serif;
+  font-size: 3.2rem;
+  color: #5E311E;
+}

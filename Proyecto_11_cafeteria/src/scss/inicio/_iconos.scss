@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.iconos {
+    margin-top: 5rem;
+
+    .listado-iconos {
+        li {
+            img {
+                margin: 0 auto;
+            }
+
+            p {
+                font-family: v.$fuenteCursiva;
+                font-size: 3.2rem;
+                color: v.$primario ;
+            }
+        }
+    }
+}
