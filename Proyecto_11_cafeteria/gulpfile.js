@@ -40,9 +40,10 @@ function versionAvif() {
         .pipe(dest('build/img'))
 }
 
-function dev() {
+function dev(done) {
     watch('src/scss/**/*.scss', css);
     watch('src/img/**/*', imagenes);
+    done();
 }
 
 exports.css = css;

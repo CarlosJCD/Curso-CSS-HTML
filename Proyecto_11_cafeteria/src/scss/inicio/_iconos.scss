@@ -5,10 +5,16 @@
     margin-top: 5rem;
 
     .listado-iconos {
+        @include m.tablet {
+            @include m.grid(3, 5rem);
+        }
+
         li {
             img {
                 margin: 0 auto;
+                width: 12rem;
             }
+
 
             p {
                 font-family: v.$fuenteCursiva;
