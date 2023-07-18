@@ -27,5 +27,44 @@
         </a>
       </nav>
     </header>
+
+    <section class="contenedor formulario">
+      <div class="formulario__grid">
+        <div class="formulario__contenido">
+          <h2>Encuentra y pide comida de tu restaurante favorito</h2>
+          <form class="formulario__buscar">
+            <div class="formulario__campo">
+              <label for="restaurant" class="formulario__label">
+                Restaurant
+              </label>
+              <input
+                id="restaurant"
+                type="text"
+                class="formulario__input"
+                placeholder="Tacos Mexico"
+              />
+            </div>
+
+            <div class="formulario__campo">
+              <label for="platillo" class="formulario__label"> Platillo </label>
+              <input
+                id="platillo"
+                type="text"
+                class="formulario__input"
+                placeholder="Pizza, Ensalada, Hamburguesa"
+              />
+            </div>
+
+            <input class="formulario__submit" type="submit" value="Buscar" />
+          </form>
+        </div>
+        <div class="formulario__imagen">
+          <img
+            src="build/img/dibujo_repartidor.svg"
+            alt="Dibujo Repartidor Formulario"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
