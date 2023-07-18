@@ -31,7 +31,9 @@
     <section class="contenedor formulario">
       <div class="formulario__grid">
         <div class="formulario__contenido">
-          <h2>Encuentra y pide comida de tu restaurante favorito</h2>
+          <h2 class="formulario__heading">
+            Encuentra y pide comida de tu restaurante favorito
+          </h2>
           <form class="formulario__buscar">
             <div class="formulario__campo">
               <label for="restaurant" class="formulario__label">
@@ -58,11 +60,48 @@
             <input class="formulario__submit" type="submit" value="Buscar" />
           </form>
         </div>
-        <div class="formulario__imagen">
+        <div class="formulario__imagen-contenedor">
           <img
+            class="formulario__imagen"
             src="build/img/dibujo_repartidor.svg"
             alt="Dibujo Repartidor Formulario"
           />
+        </div>
+      </div>
+    </section>
+
+    <section class="pasos">
+      <img class="pasos__wave" src="build/img/wave.svg" alt="imagen wave" />
+
+      <div class="pasos__contenido">
+        <h2 class="pasos__heading">
+          ¿Cómo funciona?
+          <span class="pasos__heading--descripcion"
+            >tan fácil como 1,2 y 3</span
+          >
+        </h2>
+        <div class="pasos__grid contenedor">
+          <div class="pasos__paso">
+            <img
+              class="pasos__imagen"
+              src="build/img/paso_1.png"
+              alt="imagen paso app"
+            />
+          </div>
+          <div class="pasos__paso">
+            <img
+              class="pasos__imagen"
+              src="build/img/paso_2.png"
+              alt="imagen paso app"
+            />
+          </div>
+          <div class="pasos__paso">
+            <img
+              class="pasos__imagen"
+              src="build/img/paso_3.png"
+              alt="imagen paso app"
+            />
+          </div>
         </div>
       </div>
     </section>
