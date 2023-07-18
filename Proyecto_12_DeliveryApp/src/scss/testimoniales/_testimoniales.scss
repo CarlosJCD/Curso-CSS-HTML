@@ -5,7 +5,13 @@
     padding: v.$separacion 0;
 
 
-    &__heading {}
+    &__heading {
+        text-align: center;
+    }
 
-    &__grid {}
+    &__grid {
+        @include m.tablet {
+            @include m.grid(5, 2rem);
+        }
+    }
 }
