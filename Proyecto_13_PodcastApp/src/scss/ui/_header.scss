@@ -2,12 +2,45 @@
 @use 'base/mixins' as m;
 
 .header {
-    @include m.bgImage("../img/header.jpg", v.$primario);
+    @include m.bgImage("../img/header.jpg", v.$secundarioOpacity);
+    padding: 5rem 0;
 
     &__grid {}
 
-    &__logo {}
+    &__logo {
+        max-width: 20rem;
+        margin: 0 auto;
 
-    &__contenido {}
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+
+    &__contenido {
+        padding: 10rem 0;
+
+        @include m.desktop {
+            padding: 15rem 0;
+        }
+    }
+
+    &__heading {
+
+        color: v.$blanco;
+        font-size: 4.5rem;
+
+        @include m.tablet {
+            font-size: 6rem;
+            max-width: 50%;
+        }
+
+        @include m.desktop {
+            max-width: 40%;
+        }
+    }
+
+    &__boton {
+        @include m.boton(v.$primario, v.$negro)
+    }
 
 }
