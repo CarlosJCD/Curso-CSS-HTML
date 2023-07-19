@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    @include m.bgImage("../img/header.jpg", v.$primario);
+
+    &__grid {}
+
+    &__logo {}
+
+    &__contenido {}
+
+}

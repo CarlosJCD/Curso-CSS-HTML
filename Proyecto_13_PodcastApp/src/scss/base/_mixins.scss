@@ -1,4 +1,4 @@
-@use 'variables' as v; 
+@use 'variables' as v;
 
 /** Media Queries **/
 @mixin telefono {
@@ -12,7 +12,7 @@
         @content;
     }
 }
-  
+
 @mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
@@ -41,7 +41,7 @@
     @include tablet {
         width: auto;
         display: inline-block;
-        
+
     }
 }
 
@@ -49,4 +49,11 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin bgImage($urlImagen, $colorDegradado) {
+    background-image: linear-gradient($colorDegradado 0%, $colorDegradado 100%), url($urlImagen);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
