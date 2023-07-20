@@ -1,27 +1,40 @@
-@use 'variables' as v; 
-@use 'mixins' as m; 
+@use 'variables' as v;
+@use 'mixins' as m;
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-  
+
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
 }
+
 p {
     color: v.$negro;
     font-size: 2rem;
     line-height: 2;
 }
+
 .contenedor {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.seccion {
+    padding: 3rem 0;
+
+    @include m.tablet {
+        padding: 8rem 0;
+    }
 }
 
 a {
@@ -33,17 +46,43 @@ img {
     display: block;
 }
 
-h1, h2, h3 {
-    margin: 0 0 2rem  0 ;
+h1,
+h2,
+h3 {
+    margin: 0 0 2rem 0;
 }
+
 h1 {
     font-size: 4rem;
 }
+
+h2 {
+    font-size: 3.6rem;
+    display: inline-block;
+    margin-top: 5rem;
+
+    @include m.tablet {
+        margin-top: 0;
+    }
+
+    &::after {
+        content: "";
+        background-color: v.$primario;
+        height: 1rem;
+        width: calc(100% + 2rem);
+        display: block;
+        margin: -1.2rem 0 0 0;
+    }
+
+
+}
+
 h3 {
     font-size: 2.8rem;
     text-align: center;
     text-transform: uppercase;
 }
+
 ul {
     padding: 0;
     list-style: none;
