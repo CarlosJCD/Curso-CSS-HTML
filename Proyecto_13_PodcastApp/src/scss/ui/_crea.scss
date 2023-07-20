@@ -8,5 +8,7 @@
         }
     }
 
-    &__heading {}
+    &__heading {
+        @include m.headingBorder(v.$secundario, v.$primario);
+    }
 }

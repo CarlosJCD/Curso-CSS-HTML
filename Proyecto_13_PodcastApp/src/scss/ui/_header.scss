@@ -25,7 +25,6 @@
     }
 
     &__heading {
-
         color: v.$blanco;
         font-size: 4.5rem;
 
@@ -40,7 +39,7 @@
     }
 
     &__boton {
-        @include m.boton(v.$primario, v.$negro)
+        @include m.botonPrimario;
     }
 
 }

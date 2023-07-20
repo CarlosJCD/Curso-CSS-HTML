@@ -56,26 +56,7 @@ h1 {
     font-size: 4rem;
 }
 
-h2 {
-    font-size: 3.6rem;
-    display: inline-block;
-    margin-top: 5rem;
 
-    @include m.tablet {
-        margin-top: 0;
-    }
-
-    &::after {
-        content: "";
-        background-color: v.$primario;
-        height: 1rem;
-        width: calc(100% + 2rem);
-        display: block;
-        margin: -1.2rem 0 0 0;
-    }
-
-
-}
 
 h3 {
     font-size: 2.8rem;
