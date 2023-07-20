@@ -65,28 +65,12 @@
 }
 
 @mixin botonPrimario {
-    background-color: v.$primario;
-    font-size: 2rem;
-    padding: 1.2rem 4rem;
-    font-weight: 700;
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: v.$negro;
-    text-decoration: none;
-    transition: background-color .3s ease;
-    border: none;
+    @include boton(v.$primario, v.$secundario);
+}
 
-    &:hover {
-        cursor: pointer;
-        background-color: darken(v.$primario, 10);
-    }
-
-    @include tablet {
-        width: auto;
-        display: inline-block;
-
-    }
+@mixin botonNegocio {
+    @include boton(v.$primario, v.$secundario);
+    border: 2px solid v.$blanco;
 }
 
 @mixin grid($columnas, $espaciado ) {
@@ -100,4 +84,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+
+@mixin iconoBg($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
 }

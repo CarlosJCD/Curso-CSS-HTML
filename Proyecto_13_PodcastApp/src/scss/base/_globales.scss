@@ -4,6 +4,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *,
@@ -15,6 +16,7 @@ html {
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 p {

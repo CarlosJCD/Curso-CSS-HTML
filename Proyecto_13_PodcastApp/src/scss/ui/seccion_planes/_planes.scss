@@ -3,10 +3,10 @@
 
 .planes {
     background-color: v.$secundario;
+    overflow-x: hidden;
 
     &__heading {
         @include m.headingBorder(v.$blanco, v.$primario);
-        text-align: center;
     }
 
     &__descripcion {
@@ -19,6 +19,8 @@
 
         @include m.desktop {
             flex-direction: row;
+            max-width: 80rem;
+            margin: 10rem auto 0 auto;
         }
     }
 }
