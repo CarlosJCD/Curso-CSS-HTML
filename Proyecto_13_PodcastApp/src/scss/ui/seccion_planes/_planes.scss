@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.planes {
+    background-color: v.$secundario;
+
+    &__heading {
+        @include m.headingBorder(v.$blanco, v.$primario);
+        text-align: center;
+    }
+
+    &__descripcion {
+        color: v.$blanco
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+
+        @include m.desktop {
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.plan {
+    &--negocio {
+        order: 1;
+    }
+
+    &--pro {
+        order: 2;
+    }
+
+    &--inicio {
+        order: 3;
+    }
+
+    @include m.desktop {
+        order: unset;
+    }
+
+
+}
