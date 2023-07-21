@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lugar {
+    scroll-snap-align: center;
+
+    &__imagen {
+        border-radius: 1rem;
+    }
+
+    &__nombre {
+        font-size: 1.8rem;
+    }
+}
