@@ -22,10 +22,9 @@
         }
     }
 
-    @include m.desktop {
+    @media (min-width: 1440px) {
         &:last-child {
-            grid-column: unset;
+            grid-column: auto;
         }
-
     }
 }
