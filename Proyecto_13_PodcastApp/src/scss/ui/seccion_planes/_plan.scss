@@ -1,0 +1,77 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.plan {
+    background-color: v.$blanco;
+    flex-grow: 1;
+    padding: 16rem 4rem 4rem 4rem;
+    border-bottom: 1px solid #e1e1e1;
+
+    &--inicio {
+        order: 3;
+        @include m.iconoBg('../img/icono_inicio.svg')
+    }
+
+    &--pro {
+        order: 2;
+        @include m.iconoBg('../img/icono_pro.svg')
+    }
+
+    &--negocio {
+        order: 1;
+        background-color: v.$primario;
+        @include m.iconoBg('../img/icono_negocio.svg');
+
+        @include m.desktop {
+            margin-block: -5rem;
+            border-radius: 2rem;
+            background-position: 50% 7rem;
+            padding-top: calc(16rem + 5rem);
+            z-index: 100;
+        }
+    }
+
+    @include m.desktop {
+        order: unset;
+        border: none;
+        transition: transform 300ms;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__precio {
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__listado {
+
+        li {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__boton {
+        @include m.botonPrimario;
+
+        &--negocio {
+            @include m.botonNegocio;
+        }
+
+        @include m.tablet {
+            display: block;
+        }
+
+    }
+
+
+}

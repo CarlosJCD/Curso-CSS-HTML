@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.destino {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+    &__imagen {
+        width: 14rem;
+    }
+
+    &__nombre,
+    &__distancia {
+        margin: 0;
+    }
+
+    @include m.desktop {
+        &:last-child {
+            grid-column: 3 / 4;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        &:last-child {
+            grid-column: auto;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experiencias {
+
+    &__listado {
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        column-gap: 2rem;
+
+        @include m.scrollHorizontal;
+
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
