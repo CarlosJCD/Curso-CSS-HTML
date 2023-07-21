@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experiencia {
+    scroll-snap-align: center;
+
+    &__imagen {
+        border-radius: 1rem;
+    }
+
+    &__titulo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__descripcion {
+        font-size: 1.8rem;
+    }
+}
