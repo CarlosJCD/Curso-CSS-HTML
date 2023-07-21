@@ -30,6 +30,47 @@
           <a class="barra__link" href="#">Hazte Anfitrión</a>
         </nav>
       </div>
+
+      <form class="formulario">
+        <div class="formulario__campo">
+          <label for="ubicacion" class="formulario__label">Ubicación</label>
+          <input
+            type="text"
+            class="formulario__input"
+            id="ubicacion"
+            placeholder="¿A donde viajas?"
+          />
+        </div>
+
+        <div class="formulario__campo">
+          <label class="formulario__label" for="llegada">Llegada</label>
+          <input type="date" class="formulario__input" id="llegada" />
+        </div>
+
+        <div class="formulario__campo">
+          <label class="formulario__label" for="salida">Salida</label>
+          <input type="date" class="formulario__input" id="salida" />
+        </div>
+
+        <div class="formulario__campo">
+          <label class="formulario__label" for="huespedes">Huéspedes</label>
+          <input
+            type="number"
+            class="formulario__input"
+            id="huespedes"
+            placeholder="¿Cuántos?"
+          />
+        </div>
+
+        <div class="formulario__campo">
+          <input type="submit" class="formulario__submit" value="Buscar" />
+        </div>
+      </form>
+
+      <div class="header__busqueda contenedor">
+        <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+        <a href="#" class="header__busqueda-boton">Búsqueda Flexible</a>
+      </div>
     </header>
   </body>
 </html>
