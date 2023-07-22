@@ -1,72 +1,78 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
 .propiedades {
-    margin-top: 5rem;
+  margin-top: 5rem;
+
+  @include m.tablet {
+    margin-top: 10rem;
+  }
+
+  &__heading {
+    @include m.heading();
+  }
+
+  &__grid {
+    @include m.grid(1, 2rem);
 
     @include m.tablet {
-        margin-top: 10rem;
-
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    &__heading {
-        @include m.heading();
+    @include m.desktop {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
 
-    &__grid {
-        @include m.grid(1, 2rem);
-
-        @include m.tablet {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include m.desktop {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    &__contenido {}
+  &__contenido {
+  }
 }
 
 .propiedad {
-    background-color: v.$blanco;
+  background-color: v.$blanco;
 
-    &__imagen {
-        aspect-ratio: 10 / 6;
-        background-size: auto 150%;
-        position: relative;
+  &__imagen {
+    aspect-ratio: 10 / 6;
+    background-size: auto 150%;
+    position: relative;
+  }
+
+  @for $i from 1 through 6 {
+    $imagen: "../img/propiedad_" + $i + ".jpg";
+
+    &:nth-child(#{$i}) &__imagen {
+      background-image: linear-gradient(
+          to bottom,
+          transparentize(v.$negro, 1%) 0%,
+          transparentize(v.$negro, 0.3%) 100%
+        ),
+        url($imagen);
     }
-        @for $i from 1 through 6 {
-            $imagen: '../img/propiedad_' + $i + '.jpg';
+  }
 
-            &:nth-child(#{$i}) &__imagen {
-                background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .3%) 100%), url($imagen);
-            }
-        }
+  &__nombre {
+    position: absolute;
+    color: v.$blanco;
+    bottom: 1rem;
+    left: 1rem;
+  }
 
-    &__nombre {
-        position: absolute;
-        color: v.$blanco;
-        bottom: 1rem;
-        left: 1rem;
-    }
+  &__contenido {
+    padding: 2rem;
+  }
 
-    &__contenido {
-        padding: 2rem;
-    }
+  &__texto {
+    margin-bottom: 0;
+  }
 
-    &__texto {
-        margin-bottom: 0;
-    }
+  &__precio {
+    font-size: 3rem;
+    margin: 0;
+  }
 
-    &__precio {
-        font-size: 3rem;
-        margin: 0;
-    }
-
-    &__enlace {
-        @include m.boton(v.$primario, v.$blanco);
-        display: block;
-        text-transform: uppercase;
-    }
+  &__enlace {
+    @include m.boton(v.$primario, v.$blanco);
+    display: block;
+    text-transform: uppercase;
+  }
 }
