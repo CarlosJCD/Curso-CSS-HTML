@@ -1,0 +1,17 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.eventos {
+  padding: 5rem 0;
+  &__heading {
+    @include m.heading;
+  }
+
+  &__grid {
+    margin-top: 2rem;
+    @include m.grid(1, 2rem);
+    @include m.tablet {
+      @include m.grid(3, 2rem);
+    }
+  }
+}

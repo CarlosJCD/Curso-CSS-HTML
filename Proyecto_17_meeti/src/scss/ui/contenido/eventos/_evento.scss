@@ -1,0 +1,49 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.evento {
+  border: 1px solid v.$grisClaro;
+  &__imagen {
+    width: 100%;
+  }
+
+  &__contenido {
+    padding: 2rem;
+  }
+
+  &__fecha {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  &__nombre {
+    margin-block: 1rem;
+    color: v.$gris;
+  }
+
+  &__autor {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__autor-imagen {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 8rem;
+  }
+
+  &__organizado-texto,
+  &__organizado-nombre {
+    margin: 0.5rem 0;
+  }
+
+  &__organizado-texto {
+    font-weight: 700;
+  }
+
+  &__organizado-nombre {
+  }
+}

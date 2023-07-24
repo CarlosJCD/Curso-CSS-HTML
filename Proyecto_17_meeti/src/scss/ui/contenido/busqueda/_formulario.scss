@@ -8,9 +8,7 @@
   row-gap: 2rem;
 
   @include m.desktop {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    @include m.grid(4, 2rem);
   }
 
   &__campo {
