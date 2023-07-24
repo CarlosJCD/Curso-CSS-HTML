@@ -1,0 +1,25 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.formulario {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  &__campo {
+    padding: 1rem;
+    border: 1px solid lighten($color: v.$gris, $amount: 50%);
+  }
+
+  &__submit {
+    @include m.boton(v.$primario, v.$blanco);
+    margin: 0;
+  }
+}

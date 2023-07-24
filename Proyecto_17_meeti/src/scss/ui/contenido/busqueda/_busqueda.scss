@@ -1,0 +1,13 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.busqueda {
+  background-color: v.$grisClaro;
+  padding: 5rem 0;
+
+  &__heading {
+    text-align: center;
+    margin-block: 0;
+    color: v.$gris;
+  }
+}
