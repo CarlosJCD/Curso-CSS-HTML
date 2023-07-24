@@ -1,2 +1,27 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60rem;
+
+  background-image: image-set(
+    url(../img/hero.avif) 1x,
+    url(../img/hero.webp) 1x,
+    url(../img/hero.jpg) 1x
+  );
+  background-position: 50%;
+  background-size: cover;
+
+  &__texto {
+    color: v.$blanco;
+  }
+
+  &__enlace {
+    @include m.boton(v.$terciario, v.$blanco);
+  }
+}
