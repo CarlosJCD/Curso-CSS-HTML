@@ -9,7 +9,6 @@
 
   @include m.tablet {
     flex-direction: row;
-    justify-content: space-between;
     column-gap: 2rem;
   }
 
