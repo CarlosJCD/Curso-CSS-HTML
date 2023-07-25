@@ -3,5 +3,26 @@
 
 .bloques {
   &__grid {
+    @include m.tablet {
+      @include m.grid(2, 0);
+      grid-auto-flow: dense;
+    }
+  }
+}
+
+.bloque {
+  height: 40rem;
+  background-color: v.$primario;
+  border: 1px solid v.$blanco;
+
+  &:nth-child(2) {
+    @include m.bgImage("../img/bloque_1.jpg");
+  }
+  &:nth-child(3) {
+    background-color: v.$secundario;
+    grid-column: 2 / 3;
+  }
+  &:nth-child(4) {
+    @include m.bgImage("../img/bloque_2.jpg");
   }
 }
