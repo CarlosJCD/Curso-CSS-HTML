@@ -9,11 +9,7 @@
   text-align: center;
   min-height: 60rem;
 
-  background-image: image-set(
-    url(../img/hero.avif) 1x,
-    url(../img/hero.webp) 1x,
-    url(../img/hero.jpg) 1x
-  );
+  background-image: url(../img/hero.jpg);
   background-position: 50%;
   background-size: cover;
 

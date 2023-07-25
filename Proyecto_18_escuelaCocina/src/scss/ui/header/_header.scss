@@ -14,7 +14,11 @@
       justify-content: space-between;
     }
   }
+
   &__logo {
     width: 30rem;
+    @media (max-width: 280px) {
+      width: 20rem;
+    }
   }
 }
