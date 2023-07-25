@@ -241,17 +241,40 @@ img {
     align-items: center;
 }
 
-.producto__imagen {}
+.producto__nombre {
+    font-size: 3rem;
+    text-transform: uppercase;
 
-.producto__contenido {}
+}
 
-.producto__nombre {}
+.producto__descripcion {
+    font-size: 1.6rem;
+}
 
-.producto__descripcion {}
+.producto__precio {
+    color: var(--primario);
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+}
 
-.producto__precio {}
+.producto__enlace {
+    margin-top: 2rem;
+    display: block;
+    color: var(--negro);
+    padding: 1rem 5rem;
+    border: 2px solid var(--primario);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: background-color .25s ease-in-out;
+}
 
-.producto__enlace {}
+.producto__enlace:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
+}
 
 /*==================================================================================*/
 /* FIN PRODUCTOS */
