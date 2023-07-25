@@ -49,6 +49,7 @@ img {
     background-size: cover;
     background-position: 50%;
     padding: 5rem 0;
+    position: relative;
 }
 
 .header__guitarra {
@@ -72,7 +73,26 @@ img {
     width: 30rem;
 }
 
-.header__guitarra {}
+.header__guitarra {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header__guitarra {
+        width: 50%;
+        display: block;
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .header__guitarra {
+        width: auto;
+    }
+}
 
 /*==================================================================================*/
 /* FIN HEADER */
@@ -90,6 +110,8 @@ img {
     row-gap: 2rem;
     margin-top: 5rem;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -128,12 +150,14 @@ img {
 /*==================================================================================*/
 
 .modelo {
-    color: var(--blanco);
-    text-align: center;
+    display: none;
 }
 
 @media (min-width: 768px) {
     .modelo {
+        display: block;
+        color: var(--blanco);
+        text-align: center;
         text-align: left;
         width: 50%;
     }
