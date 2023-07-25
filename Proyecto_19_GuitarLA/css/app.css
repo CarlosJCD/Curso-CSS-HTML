@@ -72,6 +72,8 @@ img {
     width: 30rem;
 }
 
+.header__guitarra {}
+
 /*==================================================================================*/
 /* FIN HEADER */
 /*==================================================================================*/
@@ -117,7 +119,52 @@ img {
     background-color: var(--primario);
 }
 
-
 /*==================================================================================*/
 /* FIN NAVEGACIÓN */
+/*==================================================================================*/
+
+/*==================================================================================*/
+/* INICIO MODELO */
+/*==================================================================================*/
+
+.modelo {
+    color: var(--blanco);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .modelo {
+        text-align: left;
+        width: 50%;
+    }
+}
+
+.modelo__nombre {
+    font-size: 8rem;
+}
+
+.modelo__precio {
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--primario);
+    line-height: 0;
+}
+
+.modelo__enlace {
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    border: 2px solid var(--primario);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: background-color .25s ease;
+}
+
+.modelo__enlace:hover {
+    background-color: var(--primario);
+}
+
+/*==================================================================================*/
+/* FIN MODELO */
 /*==================================================================================*/
