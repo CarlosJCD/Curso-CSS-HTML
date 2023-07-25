@@ -376,7 +376,13 @@ img {
     color: var(--primario);
 }
 
-.entrada__texto {}
+.entrada__texto {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
 
 .entrada__enlace {
     margin-top: 2rem;
