@@ -85,6 +85,24 @@ img {
 
         bottom: 0;
         right: 0;
+
+        animation: 1s ease-in-out 0s 1 animacionGuitarra;
+    }
+}
+
+@keyframes animacionGuitarra {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
