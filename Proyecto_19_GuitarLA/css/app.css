@@ -37,7 +37,7 @@ img {
     width: 95%;
 }
 
-[class*="__heading"] {
+[class*="heading"] {
     font-size: 4rem;
     text-align: center;
     font-weight: 900;
@@ -361,6 +361,11 @@ img {
     .blog__grid--pagina {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.entrada {
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .entrada__contenido {
